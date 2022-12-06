@@ -44,7 +44,7 @@ void Controller::HandleInput(bool &running, Snake &snake) const
                         Snake::Direction::kLeft);
         break;
       case SDLK_ESCAPE:
-        std::cout << "QUIT" << std::endl;
+        std::cout << "Game quit" << std::endl;
         running = false;
       }
     }
