@@ -4,9 +4,9 @@ This repository includes my capstone project for the Udacity C++ Nanodegree Prog
 
 <img src="snake_game.gif"/>
 
-## Changes/Additions:
-* Added functionality to end game via pressing the escape key (file: controller.cpp, line(s): 46-48).
-* Added a thread lock  (file: renderer.cpp, line(s): 95).
+## My Changes/Additions:
+* Added ability to end game via pressing the escape key (file: controller.cpp, line(s): 46-48).
+* Added a thread lock (file: renderer.cpp, line(s): 95).
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
