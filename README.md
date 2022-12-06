@@ -1,6 +1,6 @@
 # CPPND: Capstone Snake Game
 
-This repository includes the capstone project in the Udacity C++ Nanodegree Program. This project satisfies all criteria for the “README” and “Compiling and Testing” sections in the project rubric, and meets at least 5 additional criteria from the rest of the rubric. This project was based on the snake game skeleton provided by Udacity.
+This repository includes my capstone project for the Udacity C++ Nanodegree Program. This project satisfies all criteria for the “README” and “Compiling and Testing” sections in the project rubric, and meets at least 5 additional criteria from the rest of the rubric. This project was based on the snake game skeleton provided by Udacity.
 
 <img src="snake_game.gif"/>
 
