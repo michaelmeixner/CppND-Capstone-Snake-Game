@@ -9,8 +9,8 @@ The Capstone Project gives you a chance to integrate what you've learned through
 In this project, you can build your own C++ application or extend this Snake game, following the principles you have learned throughout this Nanodegree Program. This project will demonstrate that you can independently create applications using a wide range of C++ features.
 
 ## Changes/Additions:
-* Added functionality to end game via pressing the escape key (file: controller.cpp, line: 46-48).
-* Added a thread lock  (file: renderer.cpp, line: 95).
+* Added functionality to end game via pressing the escape key (file: controller.cpp, line(s): 46-48).
+* Added a thread lock  (file: renderer.cpp, line(s): 95).
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
