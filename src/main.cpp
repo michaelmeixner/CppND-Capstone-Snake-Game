@@ -2,6 +2,7 @@
 #include "controller.h"
 #include "game.h"
 #include "renderer.h"
+#include "menu.h"
 
 int main()
 {
@@ -12,12 +13,28 @@ int main()
   constexpr std::size_t kGridWidth{32};
   constexpr std::size_t kGridHeight{32};
 
-  Renderer renderer(kScreenWidth, kScreenHeight, kGridWidth, kGridHeight);
-  Controller controller;
-  Game game(kGridWidth, kGridHeight);
-  game.Run(controller, renderer, kMsPerFrame);
-  std::cout << "Game has terminated successfully!\n";
-  std::cout << "Score: " << game.GetScore() << "\n";
-  std::cout << "Size: " << game.GetSize() << "\n";
+  bool start_game = false;
+  bool quit_selected = false;
+
+  while (true)
+  {
+    while (start_game == false)
+    {
+      Menu menu;
+      if (menu.quit_selected == true)
+      {
+        return 0;
+      }
+      start_game = menu.Initialize();
+    }
+    start_game = false;
+    Renderer renderer(kScreenWidth, kScreenHeight, kGridWidth, kGridHeight);
+    Controller controller;
+    Game game(kGridWidth, kGridHeight);
+    game.Run(controller, renderer, kMsPerFrame);
+    std::cout << "Game has terminated successfully!\n";
+    std::cout << "Score: " << game.GetScore() << "\n";
+    std::cout << "Size: " << game.GetSize() << "\n";
+  }
   return 0;
 }
