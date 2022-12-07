@@ -48,6 +48,7 @@ bool Menu::Initialize()
         return false;
 
     default:
-        cout << "Menu value out of bounds." return false;
+        cout << "Menu value out of bounds.";
+        return false;
     }
 }
