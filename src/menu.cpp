@@ -2,7 +2,7 @@
 #include <sstream>
 #include <iostream>
 
-using namespace 
+using namespace std;
 bool Menu::quit_selected = false;
 
 bool Menu::Initialize()
