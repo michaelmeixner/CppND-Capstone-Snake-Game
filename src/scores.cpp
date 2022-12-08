@@ -61,7 +61,7 @@ void Scores::WriteScores(std::map<std::string, int> map)
 {
     std::ofstream file;
     std::map<std::string, int>::iterator iterator;
-    file.open("scores.txt", std::ios::in | std::ios::out | std::ios::app);
+    file.open("../data/scores.txt", std::ios::in | std::ios::out | std::ios::app);
     if (!file.is_open())
     {
         std::cout << "Unable to open file." << std::endl;
