@@ -18,9 +18,9 @@ int main()
 
   while (true)
   {
+    Menu menu;
     while (start_game == false)
     {
-      Menu menu;
       if (menu.quit_selected == true)
       {
         return 0;
