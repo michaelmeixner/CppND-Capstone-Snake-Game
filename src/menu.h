@@ -1,12 +1,7 @@
-#include <iostream>
-
 class Menu
 {
 public:
-    Menu()
-    {
-        std::cout << "Menu class constructor." << std::endl;
-    };
+    Menu() {};
     static bool quit_selected;
     bool Initialize();
 };
