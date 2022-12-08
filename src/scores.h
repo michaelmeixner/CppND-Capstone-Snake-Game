@@ -7,4 +7,5 @@ public:
     Scores();
     std::map<std::string, int> ReadScores();
     void DisplayScores(std::map<std::string, int> map);
+    void WriteScores(std::map<std::string, int> map);
 };

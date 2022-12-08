@@ -1,8 +1,11 @@
 #include <iostream>
+#include <map>
 #include "controller.h"
 #include "game.h"
 #include "renderer.h"
 #include "menu.h"
+#include "scores.h"
+#include "player.h"
 
 int main()
 {
@@ -28,6 +31,12 @@ int main()
       start_game = menu.Initialize();
     }
     start_game = false;
+
+    std::map<std::string, int> score;
+    Scores *scores = new Scores();
+    Player *player = new Player();
+    player->SetName();
+
     Renderer renderer(kScreenWidth, kScreenHeight, kGridWidth, kGridHeight);
     Controller controller;
     Game game(kGridWidth, kGridHeight);
@@ -35,6 +44,9 @@ int main()
     std::cout << "Game has terminated successfully!\n";
     std::cout << "Score: " << game.GetScore() << "\n";
     std::cout << "Size: " << game.GetSize() << "\n";
+
+    score.insert(std::make_pair(player->GetName(), game.GetScore()));
+    scores->WriteScores(score);
   }
   return 0;
 }
