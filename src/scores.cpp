@@ -13,9 +13,9 @@ std::map<std::string, int> Scores::ReadScores()
     std::string line, name;
     int score;
     std::map<std::string, int> scores;
-    const std::string scores_directory{"../data"};
+    const std::string scores_file{"../data/scores.txt"};
 
-    std::ifstream filestream(scores_directory + "/" + "scores.txt");
+    std::ifstream filestream(scores_file);
     if (filestream.is_open())
     {
         while (std::getline(filestream, line))
@@ -32,7 +32,7 @@ std::map<std::string, int> Scores::ReadScores()
     }
     else
     {
-        std::ofstream outfile("scores.txt");
+        std::ofstream outfile("../data/scores.txt");
         std::cout << "Scores file did not exist. New file was created." << std::endl;
     }
 }
