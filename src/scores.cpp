@@ -45,8 +45,6 @@ void Scores::DisplayScores(std::map<std::string, int> map)
         return pair1.second > pair2.second;
     };
     std::set<std::pair<std::string, int>, ScoreCompare> sorted_map(map.begin(), map.end(), compare);
-    for (auto it = sorted_map.begin(); it != sorted_map.end(); ++it)
-        std::cout << ' ' << (*it).first << " " << (*it).second << std::endl;
     int iterator = 1;
     for (std::pair<std::string, int> pair : sorted_map)
     {
