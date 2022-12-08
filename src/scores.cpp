@@ -55,6 +55,7 @@ void Scores::DisplayScores(std::map<std::string, int> map)
             break;
         }
     }
+    std::cout << "\n";
 }
 
 void Scores::WriteScores(std::map<std::string, int> map)
