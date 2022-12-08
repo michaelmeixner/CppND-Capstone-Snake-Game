@@ -1,6 +1,9 @@
 #include "menu.h"
+#include "scores.h"
 #include <sstream>
 #include <iostream>
+#include <map>
+#include <string>
 
 using namespace std;
 bool Menu::quit_selected = false;
@@ -39,8 +42,17 @@ bool Menu::Initialize()
         return true;
 
     case 2:
-        // get scores here
-        break;
+        Scores scores;
+        std::map<std::string, int> scores_map = scores.ReadScores();
+        if (scores_map.size() > 0)
+        {
+            scores.DisplayScores(scores_map);
+        }
+        else
+        {
+            cout << "No scores to display." << endl;
+        }
+        return false;
 
     case 3:
         cout << "Quitting game.";
