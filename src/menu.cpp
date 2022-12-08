@@ -38,11 +38,14 @@ bool Menu::Initialize()
     switch (input)
     {
     case 1:
+    {
         cout << "Start new game selected." << endl;
         return true;
-        break;
+    };
+    break;
 
     case 2:
+    {
         Scores scores;
         std::map<std::string, int> scores_map = scores.ReadScores();
         if (scores_map.size() > 0)
@@ -54,12 +57,16 @@ bool Menu::Initialize()
             cout << "No scores to display." << endl;
         }
         return false;
-        break;
+    };
+    break;
 
     case 3:
+    {
         cout << "Quitting game.";
         quit_selected = true;
         return false;
+    };
+    break;
 
     default:
         cout << "Menu value out of bounds.";
