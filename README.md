@@ -8,6 +8,7 @@ This repository includes my capstone project for the Udacity C++ Nanodegree Prog
 * Added ability to end game via pressing the escape key (file: controller.cpp, line(s): 46-48).
 * Added a thread lock (file: renderer.cpp, line(s): 95).
 * Added a start menu with three options for the player to select: start new game, see 10 highest scores, and quit game.
+* Added ability to store and view scores of top 10 players.
 
 ## Dependencies for Running Locally
 * cmake >= 3.7

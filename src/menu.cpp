@@ -40,6 +40,7 @@ bool Menu::Initialize()
     case 1:
         cout << "Start new game selected." << endl;
         return true;
+        break;
 
     case 2:
         Scores scores;
@@ -53,6 +54,7 @@ bool Menu::Initialize()
             cout << "No scores to display." << endl;
         }
         return false;
+        break;
 
     case 3:
         cout << "Quitting game.";
