@@ -62,7 +62,7 @@ bool Menu::Initialize()
 
     case 3:
     {
-        cout << "Quitting game.";
+        cout << "Quitting game.\n";
         quit_selected = true;
         return false;
     };
