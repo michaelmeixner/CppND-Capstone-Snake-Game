@@ -7,8 +7,15 @@ This repository includes my capstone project for the Udacity C++ Nanodegree Prog
 ## My Changes/Additions:
 * Added ability to end game via pressing the escape key (file: controller.cpp, line(s): 46-48).
 * Added a thread lock (file: renderer.cpp, line(s): 95).
-* Added a start menu with three options for the player to select: start new game, see 10 highest scores, and quit game.
-* Added ability to store and view scores of top 10 players.
+* Added a start menu with three options for the player to select: start new game, see 10 highest scores, and quit game (files: menu.cpp, menu.h).
+* Added ability to store and view scores of top 10 players (files: scores.cpp, scores.h, player.cpp, player.h).
+
+## Some of the Additional Criteria Met:
+* 1. Loops, functions, I/O: Added loops and functions to implement a menu system. 
+* 2. Loops, functions, I/O: Implemented additional use of the console to get user input and process it for further options.
+* 3. Loops, functions, I/O: Added file writing and reading to store and display high scores.
+* 4. Object oriented programming: Made additional classes with class attributes to store data (i.e. scores, players) and class methods to read/modify data.
+* 5. Object oriented programming: All class member functions document their effects, either through function names, comments, or formal documentation.
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
